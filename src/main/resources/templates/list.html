@@ -19,14 +19,12 @@
   </tr>
   <tr>
     <!-- TODO #2: Complete the View Jobs By Category Table. -->
-
     <!-- Added the "View All" link for the 'all' category -->
     <td>
       <li>
       <a th:href="@{/list/jobs(column='all', value='All')}">View All</a>
       </li>
     </td>
-
 
     <td th:each="category : ${tableChoices}">
       <ul>
