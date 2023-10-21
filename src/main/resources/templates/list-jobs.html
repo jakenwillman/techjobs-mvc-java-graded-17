@@ -12,7 +12,12 @@
 
   <!-- TODO #1 - Use a loop to display job results in a table. -->
 
-    <table th:each="job : ${jobs}" class="job-listing">
+  <!-- Create a loop to display each job passed in from the ListController -->
+  <!-- Add a "job-listing" class to the table to apply the provided styling -->
+  <!-- Construct a table for each job, with one job field per row -->
+
+  <!-- Task 4 - defined a new thymeleaf fragment that represents the job listing table -->
+    <table th:fragment="job-listing" th:each="job : ${jobs}" class="job-listing">
       <tr>
         <td>ID</td>
         <td th:text="${job.id}"></td>
